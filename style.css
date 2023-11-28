@@ -51,6 +51,7 @@ div.logo{
     font-size: 40px;
     margin-bottom: 2px;
     color: red;
+    margin-left: 5vh;
 }
 
 .Name {
@@ -63,13 +64,14 @@ div.logo{
 .pic{
     height: 300px;
     width: 300px;
-    margin-left: 30vh;
+    margin-left: 50vh;
     
 }
 
 
 /*BUTTONS*/
 .button {
+    margin-left: 5vh;
     display: inline-block;
     background-color: red;
     color: #fff;
