@@ -38,13 +38,17 @@ div.logo{
 }
 /*===== HOME =====*/
 .home {
-    position: relative;
+    display: flex;
+    justify-content: space-around;
+    /* position: relative; */
     row-gap: 5rem;
     padding: 4rem 0 5rem;
 }
 
 .home__data {
     align-self: center;
+    align-items: center;
+    
 }
 
 .home__title {
@@ -66,13 +70,19 @@ div.logo{
     width: 300px;
     margin-left: 60vh;
     margin-top: 15vh;
-    
+} 
+@media (max-width: 768px) {
+ .home__data, .About {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+ }
 }
 
 
 /*BUTTONS*/
 .button {
-    margin-left: 5vh;
+    margin-left: 15vh;
     display: inline-block;
     background-color: red;
     color: #fff;
@@ -91,3 +101,35 @@ div.logo{
     margin-top: 50vh;
 }
 
+.text{
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    
+}
+#box-container{
+    align-items: center;
+    margin-left: 5vh;
+    height: 200px;
+    width: 200px;
+    border-radius: 40px;
+    background-color: #fff;
+    box-shadow: 20px 20px 60px #11111161,inset -20px -20px 60px #fefcfc3f;
+}
+.about-boxes{
+    align-items: center;
+    display: flex;
+    gap: 5vh;
+}
+.icon{
+    width: 40px;
+    margin-top: 10px;
+    margin-left: vh;
+}
+.about-exp{
+    text-align: center;
+}
+.experience{
+    text-align: center;
+    
+}
