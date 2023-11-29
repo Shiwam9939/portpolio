@@ -8,13 +8,13 @@
 </head>
 <body>
     <nav id="header">
-        <div class="logo">Portpolio</div>
+        <div class="logo">Portfolio</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about" >About</a></li>
+                <li><a href="#" onclick="myFunction()">Experience</a></li>
+                <li><a href="#projects" >Projects</a></li>
+                <li><a href="#contact" onclick="myFunction()">Contact</a></li>
             </ul>
         </div>
 
@@ -24,7 +24,7 @@
             <div class="home__data">
                 <h1 class="home__title">Hi, I'm <br><span class="Name">PRASHANT MISHRA</span><br>I'm a <span class="text">Frontend Devloper</span></h1>
 
-                <a href="#" class="button" onclick="window.opener('')">Download CV</a>
+                <a href="/pics/shiv.jpg" class="button" target="_blank" >Download CV</a>
             </div>
             <div class="profile">
                 <img src="pics/pro.png" alt="" class="pic">
@@ -32,7 +32,7 @@
         </div>
         
     </section>
-    <section class="about">
+    <section id="about">
         <h3 class="text">About me</h3>
         <div class="about-boxes">
             <div id="box-container">
@@ -42,6 +42,12 @@
                 <h4 class="experience"> One month Frontend devlopment</h4> <br>
             </div>
             <div id="box-container">
+                <h3 class="about-exp"><img src="pics/skill.png" class="icon" alt="skill logo"><br>Skills <br>
+                    
+                </h3>
+                <h4 class="experience">Frontend devlopment using HTMl, CSS, JS, Django</h4> <br>
+            </div>
+            <div id="box-container">
                 <h3 class="about-exp"><img src="pics/education.png" class="icon" alt="education logo"><br>Education <br>
                     
                 </h3>
@@ -49,12 +55,67 @@
             </div>
         </div>
     </section>
-    <!-- <div class="social_icon">
-        <a href="" ><img src="pics/linkedin.png" class="home__social-icon" alt=""></i></a>
-        <a href=""><img src="pics/github.png"  class="home__social-icon" alt=""></i></a>
-        <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a> -->
-    <!-- </div> -->
+    <div id="projects">
+        <h1 class="project-text">Projects</h1>
+        <div class="project-boxes">
+            <div class="image-container">
+                <img src="pics/tourism.jpg" alt="Image description">
+                <div class="text-overlay">
+                    <h2 class="project-name">India Tourism</h2>
+                    <h3 class="project-about1">It was made using Html and css</h3>
+                    <button class="github-repo">Repo Link</button>
+                </div>
+            </div>
+            <div class="image-container">
+                
+                <img src="pics/portfolio.jpg" alt="Image description">
+                <div class="text-overlay">
+                    <h2 class="project-name">Portfolio</h2>
+                    <h3 class="project-about2">It was made using Html CSS and JavaScript</h3>
+                    <button class="github-repo"><a href="https://github.com/Shiwam9939/portpolio" target="_blank" style="color: black;">Repo Link</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="another-box">
+            <div class="image-container">
+                
+                <img src="pics/game.jpg" alt="Image description">
+                <div class="text-overlay">
+                    <h2 class="project-name">Tic Tac Toy</h2>
+                    <h3 class="project-about2">It was made using Html CSS and JavaScript</h3>
+                    <button class="github-repo">Repo Link</button>
+                </div>
+            </div>
+            <div class="image-container">
+                
+                <img src="pics/calculator.jpg" alt="Image description">
+                <div class="text-overlay">
+                    <h2 class="project-name">Calculator</h2>
+                    <h3 class="project-about2">It was made using Html CSS and JavaScript</h3>
+                    <button class="github-repo">Repo Link</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="contact">
+        <div class="logo2"><h2>Prashant Kumar Mishra</h2></div>
+        <h2 class="connect2">Let's Talk With Me!</h2>
+        <p class="connect2">
+          An open invitation to connect, and exploring collaborative opportunities
+          on my personal portfolio website.
+        </p>
+        <div class="social_icon">
+        <a href="https://www.linkedin.com/in/prashant-kumar-mishra-76533918a/" target="_blank" ><img src="pics/linkedin.png" class="home__social-icon2" alt=""></i></a>
+        <a href="https://github.com/Shiwam9939" target="_blank"><img src="pics/github.png"  class="home__social-icon2" alt=""></i></a>
+        <a href="shiwammishra9939@gmail.com" target="_blank"><img src="pics/gmail.png" alt=""  class="home__social-icon2"></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </section>
+      <footer class="footer">
+        Copyright © 2023 Web Design Mastery. All rights reserved.
+      </footer>
+
     
-    <link rel="stylesheet" href="script.js">
+    <script src="script.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 
 body{
     
-    background: #252A34;
+    background: #1c1f27cc;
     font-family: 'Poppins', sans-serif;    
 }
 html{
@@ -36,11 +36,12 @@ div.logo{
     font-size: 24px;
     color: white;
 }
+
+
 /*===== HOME =====*/
 .home {
     display: flex;
     justify-content: space-around;
-    /* position: relative; */
     row-gap: 5rem;
     padding: 4rem 0 5rem;
 }
@@ -72,14 +73,31 @@ div.logo{
     margin-top: 15vh;
 } 
 @media (max-width: 768px) {
- .home__data, .About {
+ .home__data, .About, .pic {
     align-items: center;
     flex-direction: column;
     display: flex;
+    text-align: center;
  }
 }
-
-
+@media (max-width: 550px){
+    .home__data{
+        margin-left: 35vh;
+    }
+    .pic{
+        margin-left: 25vh;
+    }
+}
+@media (max-width: 768px){
+    .pic {
+        margin-left: 20vh;
+    }
+}
+@media (max-width: 550px){
+    .pic{
+        margin-left: 37.5vh;
+    }
+}
 /*BUTTONS*/
 .button {
     margin-left: 15vh;
@@ -96,10 +114,7 @@ div.logo{
     color: rgb(255, 5, 5);
     background-color: white;
 }
-.home__social-icon{
-    width: 30px;
-    margin-top: 50vh;
-}
+
 
 .text{
     align-items: center;
@@ -120,11 +135,12 @@ div.logo{
     align-items: center;
     display: flex;
     gap: 5vh;
+    margin-left: 37.5vh;
+    align-items: center;
 }
 .icon{
     width: 40px;
     margin-top: 10px;
-    margin-left: vh;
 }
 .about-exp{
     text-align: center;
@@ -132,4 +148,104 @@ div.logo{
 .experience{
     text-align: center;
     
+}
+div.about-boxes{
+    text-align: center;
+}
+.home__social-icon{
+    margin-top: 20vh;
+    align-items: center;
+    gap: 10vh;
+}
+.social_icon{
+    text-align: center;
+    
+}
+
+.project-text{
+    text-align: left;
+    margin-top: 5vh;
+    font-size: 10vh;
+    margin-left: 10vh;
+    color: red;
+}
+
+.project-boxes{
+    display: flex;
+}
+.github-repo{
+    
+    text-align: center;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 10px 12px;
+    font-weight: 20px;
+    border-radius: 15px;
+    margin-bottom: 5vh;
+
+}
+.github-repo:hover {
+    outline: none;
+    color: rgb(255, 252, 252);
+    background-color: #845EC2;
+}
+
+
+.center-box{
+    margin-top: 5vh;
+    text-align: center;
+    display: flex;
+}
+.another-box{
+    display: flex;
+    margin-top: 5vh;
+}
+
+
+.image-container {
+    position: relative;
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    border-radius: 40px;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: blue;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+#contact{
+    text-align: center;
+    margin-top: 5em;
+    color: red;
+}
+.connect2{
+    margin-top: 2vh;
+}
+.logo2{
+    font-size: 2em;
+}
+.home__social-icon2{
+    width: 7vh;
+}
+.footer{
+    text-align: center;
 }
