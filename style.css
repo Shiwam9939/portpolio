@@ -179,6 +179,7 @@ div.about-boxes{
     display: inline-block;
     background-color: white;
     color: black;
+    cursor: pointer;
     padding: 10px 12px;
     font-weight: 20px;
     border-radius: 15px;
@@ -186,6 +187,7 @@ div.about-boxes{
 
 }
 .github-repo:hover {
+    cursor: pointer;
     outline: none;
     color: rgb(255, 252, 252);
     background-color: #845EC2;
@@ -219,6 +221,7 @@ div.about-boxes{
     height: auto;
     display: block;
 }
+
 .text-overlay {
     position: absolute;
     top: 50%;
